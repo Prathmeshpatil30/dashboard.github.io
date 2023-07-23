@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
+        integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;600&family=Baloo+Bhaina+2:wght@700&family=Lato:wght@700&family=Poppins:wght@700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"  -->
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <nav>
+        <ul>
+            <div>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-wordpress logo"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="search">
+                        <i class="fa-solid fa-magnifying-glass search"></i>
+                        <span class="nav"></span>
+                    </a>
+                </li>
+            </div>
+
+            <div>
+                <li>
+                    <a href="#" class="container">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="nav"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="container">
+                        <i class="fa-regular fa-address-card"></i>
+                        <span class="card"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="container">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="list"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="container">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="user"></span>
+                    </a>
+                </li>
+            </div>
+
+            <div>
+                <li>
+                    <a href="#" class="bell">
+                        <i class="fa-regular fa-bell bell"></i>
+                        <span class="user"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="logout">
+                        <i class="fa-solid fa-right-from-bracket logout"></i>
+                        <span class="list"></span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="container-child">
+            <div><img src="profile photo.jpg" class="photo" alt=""></div>
+            <div class="G-child1">
+                <h1>Hi Mike,</h1>
+                <p class="bal">Welcome back.</p>
+            </div>
+
+            <div class="G-child2">
+                <h3>Today</h3>
+                &nbsp
+                <h1>$19,892</h1>
+                <p class="bal">Account Balance</p>&nbsp
+
+                <h3>$4000</h3>
+                <p class="bal">Year-to-Date Contribute</p>&nbsp
+
+                <h3>$1,892</h3>
+                <p class="bal">Total Interest</p>
+
+                <button class="btn1">I want to &nbsp<i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <div class="G-child3">
+                <h2>Recent Transaction</h2>&nbsp
+                <p class="bal">2020-08-07</p>
+                <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                <p class="bal">2020-08-021</p>
+                <h4>Withdrawal Transfer to Bank-XXX11</h4>
+                <p class="bal">2020-08-16</p>
+                <h4>Withdrawal Transfer to Bank-XXX11</h4>
+            </div>
+        </div>
+
+        <div class="container-child">
+            <div class="G-child6">
+                <h3>Retirement Income</h3>
+                <h1>Saving Year 2056</h1>
+            </div>
+
+            <div class="value">
+                <div>
+                    <h1>$300,000</h1>
+                    <p class="bal">My Goal</p>
+                    <hr>
+                </div>
+                <div>
+                    <h1>59%</h1>
+                    <p class="bal">Goal Achieved</p>
+                </div>
+                <div>
+                    <h1>$300</h1>
+                    <p class="bal">Est.Monthly Income</p>
+                </div>
+            </div>
+            <div class="chart">
+                <h2>Contributions Overtime</h>
+            </div>
+            <canvas id="Chart"></canvas>
+            <div class="chart2">
+                <h2>How do I compare to my peers?</h2>
+                <p class="bal">These number represent current goal achievment</p>
+            </div>
+            <div class="doughnut-div">
+                <div class="d">
+                    <label><span><strong>Age:</strong> Under 30    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i></span></label>
+                    <label><span><strong>Salary:</strong> K20 - K30   &nbsp;&nbsp;<i class="fa-solid fa-caret-down"></i></span></label>
+                    <label><span><strong>Gender:</strong> Male    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <i class="fa-solid fa-caret-down"></i></span></label>
+                </div>
+                <canvas class="dougnut-pie" id="doughnut1"></canvas>
+                <canvas class="dougnut-pie" id="doughnut2"></canvas>
+                <canvas class="dougnut-pie" id="doughnut3"></canvas>
+
+            </div>
+            <div class="text-1">
+                <p>Average</p>
+                &nbsp
+                <p>Top</p>
+                &nbsp
+                <p>Me</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-child">
+            <div class="G-child4">
+                <h2>Retirement strategy</h2>&nbsp
+                <p>Employee Contribution</p>
+                <input type="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value"
+                    id="scroll" class="range"><span id="slider">0</span>
+                <script> document.getElementById("scroll").addEventListener("input", (e) => { document.getElementById("slider").innerHTML = e.target.value + "%" })
+                </script>
+
+                <p>Retirement Age</p>
+                <input type="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value"
+                    id="scroll1" class="range1"><span id="slider1">0</span>
+                <script> document.getElementById("scroll1").addEventListener("input", (e) => { document.getElementById("slider1").innerHTML = e.target.value })
+                </script>
+                <h4>Employer Contribution 8.4%</h4>
+                <h4>Interest Rate 5%</h4>
+
+                <button class="btn2">Update</button>
+                <h3>Veiw Help Docs<i class="fa-solid fa-angle-right"></i></h3>
+            </div>
+            <div class="G-child5">
+                <p>Are You Considering a</p>
+                <b>Housing Advance?</b>
+                &nbsp
+                <p class="limit">Limited Time Reduce Interest</p>
+                <p class="learn">Learn More <i class="fa-solid fa-angle-right"></i></p>
+            </div>
+        </div>
+</body>
+
+</html>
